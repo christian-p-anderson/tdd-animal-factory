@@ -32,7 +32,7 @@ public class DogHouseTest {
     @Test
     public void removeTest() {
         // Given
-        Dog dogToBeAdded = new Dog(null, null, 0);
+        Dog dogToBeAdded = new Dog(null, null, 2);
         DogHouse.add(dogToBeAdded);
         Integer id = dogToBeAdded.getId();
 
@@ -50,7 +50,7 @@ public class DogHouseTest {
     @Test
     public void removeByDogTest() {
         // Given
-        Dog dogToBeAdded = new Dog(null, null, 0);
+        Dog dogToBeAdded = new Dog(null, null, 2);
         DogHouse.add(dogToBeAdded);
         Integer id = dogToBeAdded.getId();
 
