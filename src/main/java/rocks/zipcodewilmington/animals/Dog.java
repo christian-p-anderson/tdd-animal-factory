@@ -10,6 +10,10 @@ public class Dog extends Mammal {
         super(name, birthDate, id);
     }
 
+    public Dog() {
+        this(null ,null, 1);
+    }
+
     public String speak() {
         return "bark!";
     }

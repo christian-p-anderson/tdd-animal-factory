@@ -40,7 +40,6 @@ public class CatHouseTest {
         Assert.assertNull(retrievedCat);
     }
 
-
     // TODO - Create tests for `void remove(Cat cat)`
     @Test
     public void removeByCatTest() {
@@ -55,6 +54,21 @@ public class CatHouseTest {
 
         // then
         Assert.assertNull(retrievedCat);
+    }
+
+    // TODO - Create tests for `Cat getCatById(Integer id)`
+    @Test
+    public void getCatById() {
+        // Given there is a cat to be added
+        Cat cat = new Cat(null, null, 3);
+        Integer id = cat.getId();
+        CatHouse.add(cat);
+
+        // When
+        Cat retrievedCat = CatHouse.getCatById(id);
+
+        // Then
+        Assert.assertEquals(cat, retrievedCat);
     }
 
     // TODO - Create tests for `Integer getNumberOfCats()`
@@ -77,9 +91,5 @@ public class CatHouseTest {
 
         // then
         Assert.assertEquals(expected, actual);
-
-
-
-
     }
 }

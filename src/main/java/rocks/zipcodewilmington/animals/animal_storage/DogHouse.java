@@ -6,6 +6,9 @@ import rocks.zipcodewilmington.animals.Dog;
  * @author leon on 4/19/18.
  */
 public class DogHouse {
+    private DogHouse() {
+
+    }
     private static AnimalWarehouse<Dog> dogHouse = new AnimalWarehouse<>();
 
     public static void add(Dog dog) {

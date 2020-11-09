@@ -47,7 +47,6 @@ public class CatTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     // TODO - Create tests for `setBirthDate(Date birthDate)`
     @Test
     public void setBirthDateTest() {
